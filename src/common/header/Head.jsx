@@ -14,7 +14,11 @@ const Head = () => {
           <div className="right row RText">
             <label>Theme FAQ's</label>
             <label>Needs Help</label>
-            <span></span>
+            {/* {Start with a : when starting to write the comment} */}
+            <span>🇰🇪</span>
+            <label>SWA</label>
+            <span>🇺🇸</span>
+            <label>EN</label>
           </div>
         </div>
       </section>
