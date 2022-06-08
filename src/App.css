@@ -8,6 +8,7 @@
 
 body {
   background-color: #fff;
+  font-family: 'Poppins' , sans-serif;
 }
 
 .background {
@@ -17,7 +18,7 @@ body {
 
 .container {
   max-width: 90%;
-  margin: 0;
+  margin: auto;
 }
 
 .d_flex {
@@ -37,7 +38,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 li {
@@ -45,5 +46,13 @@ li {
 }
 
 .uppercase {
-  text-transform: none;
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.RText {
+  text-align: right;
 }
