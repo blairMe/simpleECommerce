@@ -35,10 +35,13 @@ const NavBar = () => {
             </li>
           </ul>
 
-          <button className="toggle" onClick={() => setMobileMenu(!MobileMenu)}></button>
-          {
-            MobileMenu ? ""
-          }
+          <button className="toggle" onClick={() => setMobileMenu(!MobileMenu)}>
+            {MobileMenu ? (
+              <i className="fas fa-times close home-bth" />
+            ) : (
+              <i className="fas fa-bars open" />
+            )}
+          </button>
         </div>
       </header>
     </>
