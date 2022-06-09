@@ -5,9 +5,16 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-   <>
-   <Header />
-   </>
+    <>
+      <Router>
+        <Header />
+        <Switch>
+          {/* <Route path="/">
+            <About />
+          </Route> */}
+        </Switch>
+      </Router>
+    </>
   );
 }
 
