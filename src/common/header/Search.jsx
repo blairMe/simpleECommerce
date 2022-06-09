@@ -3,7 +3,13 @@ import React from "react";
 const Search = () => {
   return (
     <>
-      <h1>Search</h1>
+      <section className="search">
+        <div className="container c_flex">
+          <div className="logo width">
+            <img src={logo} alt='' />
+          </div>
+        </div>
+      </section>
     </>
   );
 };

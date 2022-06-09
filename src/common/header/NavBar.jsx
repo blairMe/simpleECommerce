@@ -14,36 +14,45 @@ const NavBar = () => {
               Categories <i className="fa fa-chevron-down"></i>
             </h4>
           </div>
-        </div>
-        <div className="navlink">
-          <ul className="nav">
-            <li>
-              <Link to="/">home</Link>
-            </li>
-            <li>
-              <Link to="/pages">pages</Link>
-            </li>
-            <li>
-              <Link to="/user">user account</Link>
-            </li>
-            <li>
-              <Link to="/vendor">vendor account</Link>
-            </li>
-            <li>
-              <Link to="/track">track my order</Link>
-            </li>
-            <li>
-              <Link to="/contact">contact</Link>
-            </li>
-          </ul>
 
-          <button className="toggle" onClick={() => setMobileMenu(!mobileMenu)}>
-            {mobileMenu ? (
-              <i className="fas fa-times close home-bth" />
-            ) : (
-              <i className="fas fa-bars open" />
-            )}
-          </button>
+          <div className="navlink">
+            <ul
+              className={
+                mobileMenu ? "nav-links-mobileMenu" : "link f_flex capitalize"
+              }
+              onClick={() => setMobileMenu(false)}
+            >
+              <li>
+                <Link to="/">home</Link>
+              </li>
+              <li>
+                <Link to="/pages">pages</Link>
+              </li>
+              <li>
+                <Link to="/user">user account</Link>
+              </li>
+              <li>
+                <Link to="/vendor">vendor account</Link>
+              </li>
+              <li>
+                <Link to="/track">track my order</Link>
+              </li>
+              <li>
+                <Link to="/contact">contact</Link>
+              </li>
+            </ul>
+
+            <button
+              className="toggle"
+              onClick={() => setMobileMenu(!mobileMenu)}
+            >
+              {mobileMenu ? (
+                <i className="fas fa-times close home-bth" />
+              ) : (
+                <i className="fas fa-bars open" />
+              )}
+            </button>
+          </div>
         </div>
       </header>
     </>
