@@ -158,5 +158,11 @@ header ul li a:hover {
     transition: .5s;
     width: 60%;
     height: 100vh;
+    background-color: #fff;
+    z-index: 888;
+  }
+
+  header ul li {
+    
   }
 }
