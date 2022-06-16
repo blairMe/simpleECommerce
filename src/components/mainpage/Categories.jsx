@@ -1,5 +1,4 @@
 import React from "react";
-import SlideCard from './SlideCard';
 
 const Categories = () => {
   const data = [
