@@ -11,6 +11,7 @@ const FlashDeals = () => {
             <h1>Flash Deals</h1>
           </div>
           <FlashCard />
+          <NaN
         </div>
       </section>
     </>
