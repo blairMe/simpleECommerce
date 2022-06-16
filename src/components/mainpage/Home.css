@@ -17,3 +17,16 @@
   padding: 10px;
 }
 
+.homeSlide ul li button {
+  background: transparent !important;
+  color: transparent !important;
+}
+
+.homeSlide ul li button::before {
+  font-size: 15px;
+  color: #0f3460;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  margin: auto;
+}
