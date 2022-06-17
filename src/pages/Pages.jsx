@@ -6,7 +6,7 @@ const Pages = ({ productItems }) => {
   return (
     <>
       <Home />
-      <FlashDeals />
+      <FlashDeals productItems={productItems} />
     </>
   );
 };
