@@ -2,7 +2,7 @@ import React from "react";
 import Home from "../components/mainpage/Home";
 import FlashDeals from "../components/flashdeals/FlashDeals";
 
-const Pages = () => {
+const Pages = ({ productItems }) => {
   return (
     <>
       <Home />
@@ -11,4 +11,4 @@ const Pages = () => {
   );
 };
 
-export default Home;
+export default Pages;
