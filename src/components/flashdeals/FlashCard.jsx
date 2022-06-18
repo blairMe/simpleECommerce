@@ -16,7 +16,8 @@ const FlashCard = ({ productItems }) => {
               </div>
             </div>
             <div className="product-details">
-              <h3>{}</h3>
+              <h3>{product}</h3>
+              {/* More code coming soon */}
               <div className="rate">
                 <i className="fa fa-star"></i>
                 <i className="fa fa-star"></i>
