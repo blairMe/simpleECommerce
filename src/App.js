@@ -12,6 +12,20 @@ function App() {
 
   const [cartItem, setCardItem] = useState([]);
 
+  const addToCard = (product) => {
+    const productExit = cartItem.find((item) => item.id === product.id);
+
+    if (productExit) {
+      setCardItem(
+        cartItem.map((item) => {
+          item.id === product.id
+            ? { ...productExit, qty: productExit.qty + 1 }
+            : item;
+        })
+      );
+    }
+  };
+
   return (
     <>
       <Router>
