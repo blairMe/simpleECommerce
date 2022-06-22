@@ -12,5 +12,4 @@ const Pages = ({ productItems, cartItem, addToCart }) => {
   );
 };
 
-//Comment
 export default Pages;
