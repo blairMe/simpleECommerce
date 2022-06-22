@@ -6,9 +6,11 @@ const Pages = ({ productItems, cartItem, addToCart }) => {
   return (
     <>
       <Home cartItem={cartItem} />
+      
       <FlashDeals productItems={productItems} />
     </>
   );
 };
 
+//Comment
 export default Pages;
