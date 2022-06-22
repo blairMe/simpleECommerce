@@ -5,6 +5,7 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Pages from "./pages/Pages";
 import Data from "./components/flashdeals/Data";
+import Cart from './common/cart/Cart';
 
 function App() {
   // Step 1: Fetch data from db
@@ -32,7 +33,10 @@ function App() {
         <Header />
         <Switch>
           <Route path="/" exact>
-            <Pages productItems={productItems} />
+            <Pages productItems={productItems} addToCart={addToCard} />
+          </Route>
+          <Route path="/cart" exact>
+            <Cart cartItem={cartItem} addToCart={addToCard} />
           </Route>
         </Switch>
       </Router>
