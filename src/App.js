@@ -18,11 +18,11 @@ function App() {
 
     if (productExit) {
       setCardItem(
-        cartItem.map((item) => {
-          item.id === product.id
+        cartItem.map((item) =>
+          (item.id === product.id
             ? { ...productExit, qty: productExit.qty + 1 }
-            : item;
-        })
+            : item)
+        )
       );
     }
   };
@@ -30,7 +30,7 @@ function App() {
   return (
     <>
       <Router>
-        <Header />
+        <Header cartItem={cartItem} />
         <Switch>
           <Route path="/" exact>
             <Pages productItems={productItems} addToCart={addToCard} />
