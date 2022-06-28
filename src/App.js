@@ -8,7 +8,6 @@ import Data from "./components/flashdeals/Data";
 import Cart from './common/cart/Cart';
 
 function App() {
-  //Useless Comment
   // Step 1: Fetch data from db
   const { productItems } = Data;
 
