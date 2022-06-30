@@ -13,7 +13,7 @@ function App() {
 
   const [cartItem, setCardItem] = useState([]);
 
-  const addToCard = (product) => {
+  const addToCart = (product) => {
     const productExit = cartItem.find((item) => item.id === product.id);
 
     if (productExit) {
@@ -24,6 +24,8 @@ function App() {
             : item)
         )
       );
+    } else {
+      setCardItem([cartItem, { ...product, qty: 1}])
     }
   };
 
@@ -33,10 +35,10 @@ function App() {
         <Header cartItem={cartItem} />
         <Switch>
           <Route path="/" exact>
-            <Pages productItems={productItems} addToCart={addToCard} />
+            <Pages productItems={productItems} addToCart={addToCart} />
           </Route>
           <Route path="/cart" exact>
-            <Cart cartItem={cartItem} addToCart={addToCard} />
+            <Cart cartItem={cartItem} addToCart={addToCart} />
           </Route>
         </Switch>
       </Router>
