@@ -14,11 +14,17 @@ const Cart = ({ cartItem, addToCart }) => {
           </div>
           {
             cartItem.map((item) => {
-              const prodcutQty = item.price * item.prodcutQty
+              const prodcutQty = item.price * item.qty
               return(
                 <div className="cartlist product d_flex">
                   <div className="img">
                     <img src={item.cover} alt="" />
+                  </div>
+                  <div className="cart-details">
+                    <h3>{item.name}</h3>
+                    <h4>{item.price} * {item.qty}
+                    <span>${prodcutQty}.00</span>
+                    </h4>
                   </div>
                 </div>
               )
