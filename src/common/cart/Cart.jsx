@@ -36,4 +36,6 @@ const Cart = ({ cartItem, addToCart }) => {
   );
 };
 
+//nothing
+
 export default Cart;
