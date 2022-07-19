@@ -25,7 +25,7 @@ function App() {
         )
       );
     } else {
-      setCardItem([cartItem, { ...product, qty: 1}])
+      setCardItem([...cartItem, { ...product, qty: 1}])
     }
   };
 

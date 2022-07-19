@@ -26,6 +26,9 @@ const Cart = ({ cartItem, addToCart }) => {
                     <span>${prodcutQty}.00</span>
                     </h4>
                   </div>
+                  <div className="cart-items-function">
+                    <div className="removeCart"></div>
+                  </div>
                 </div>
               )
             })
