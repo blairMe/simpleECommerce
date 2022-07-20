@@ -42,14 +42,14 @@ const Cart = ({ cartItem, addToCart, decreaseQty }) => {
                         <i className="fa fa-plus"></i>
                       </button>
                       <button
-                        className="incCart"
+                        className="desCart"
                         onClick={() => decreaseQty(item)}
                       >
                         <i className="fa fa-minus"></i>
                       </button>
                     </div>
                   </div>
-                  <div className="cart-item-price"></div>
+                  {/* <div className="cart-item-price"></div> */}
                 </div>
               );
             })}
