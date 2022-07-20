@@ -29,6 +29,14 @@ function App() {
     }
   };
 
+  const decreaseQty = (product) => {
+    const productExit = cartItem.find((item) => item.id === product.id);
+
+    if(productExit === 1) {
+      setCardItem(cartItem.filter((item) => item.d))
+    }
+  }
+
   return (
     <>
       <Router>
