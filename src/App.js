@@ -54,6 +54,4 @@ function App() {
   );
 }
 
-//Useless Comment
-
 export default App;
