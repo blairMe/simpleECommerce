@@ -34,6 +34,8 @@ function App() {
 
     if(productExit === 1) {
       setCardItem(cartItem.filter((item) => item.d))
+    } else {
+      setCardItem(cartItem.map())
     }
   }
 
