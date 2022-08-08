@@ -56,6 +56,6 @@ function App() {
   );
 }
 
-//useless comment
+//Empty
 
 export default App;
