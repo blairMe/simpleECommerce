@@ -56,6 +56,4 @@ function App() {
   );
 }
 
-//Empty
-
 export default App;
