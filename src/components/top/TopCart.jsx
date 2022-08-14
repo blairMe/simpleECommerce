@@ -11,6 +11,9 @@ const TopCart = () => {
                 <span className="tleft">{value.para}</span>
                 <span className="tright">{value.desc}</span>
               </div>
+              <div className="img">
+                <img src={value.cover} alt="" />
+              </div>
             </div>
           );
         })}
