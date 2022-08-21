@@ -23,6 +23,4 @@ const TopCart = () => {
     );
 }
 
-//Comment
-
 export default TopCart;
